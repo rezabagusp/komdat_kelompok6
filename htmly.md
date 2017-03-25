@@ -95,14 +95,15 @@ Cek apakah instalasi apache berhasil atau tidak di http://localhost:8888
 6.Buka halaman http://localhost:8888/htmly/installer.php untuk instalasi lebih lanjut.
 ***
 jika pada saat membuka 		http://localhost:8888/htmly/installer.php terdapat ***error***: no permission to write in the Directory serta ***Warning***:Your rewriteRule is not ready to use. Help!. 	lakukan langkah berikut:
-#####Set Up mod_rewrite for Apache
+##### Set Up mod_rewrite for Apache
 1.Enabling mod_rewrite
 ```bash
 $ sudo a2enmod rewrite
 ```
 2.Lakukan modifikasi pada file .htacces dengan membuka file default apache configuration
 ```bash
-$ sudo nano /etc/apache2/sites-enabled/000-default.conf```
+$ sudo nano /etc/apache2/sites-enabled/000-default.conf
+```
 3.Didalam file anda akan menemukan blcok `<VirtualHost *:80>` masukkan block berikut pada line 1, kemudian save.
 ```bash
 <Directory /var/www/html>
@@ -110,10 +111,12 @@ $ sudo nano /etc/apache2/sites-enabled/000-default.conf```
     AllowOverride All
     Order allow,deny
     allow from all
-</Directory>```
+</Directory>
+```
 4.Restart apache
 ```bash
-$ sudo service apache2 restart```
+$ sudo service apache2 restart
+```
 5.coba akses kembali http://localhost:8888/htmly/installer.php. seharusnya sudah bisa melakukan instalasi.
 ## Konfigurasi (opsional)
 
