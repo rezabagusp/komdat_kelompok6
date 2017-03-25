@@ -12,12 +12,12 @@ HTMLy dirancang untuk berjalan lancar meskipun menggunakan spesifikasi server mi
 
 ## Instalasi
 
-#####HTMLy membutuhkan:
+### HTMLy membutuhkan:
 	- php versi >= 5.3
 	- php-xml package
 	- Web Server(apache2).
 
-##### Membuat VIrtual Machine Ubuntu server 
+### Membuat VIrtual Machine Ubuntu server 
 1.Download [Virtual Box](https://www.virtualbox.org/wiki/Downloads). kemudian install.
 
 2.Download [Ubuntu Server](https://www.ubuntu.com/download/server).
@@ -51,7 +51,7 @@ Name   | Protocol   | Host IP    | Host Port  | Guest IP   | Guest Port
 http   | TCP        |            | 8888       |            | 80
 ssh    | TCP        |            | 2222       |            | 22
 
-##### Instalasi LAMP (Linux Apache MySQL PHP)
+### Instalasi LAMP (Linux Apache MySQL PHP)
 1.Instal SSH (untuk remote)
 ```bash
     $ sudo apt update
@@ -71,7 +71,7 @@ ssh    | TCP        |            | 2222       |            | 22
 Cek apakah instalasi apache berhasil atau tidak di http://localhost:8888
 ***
 
-##### Instalasi Aplikasi HTMLy
+### Instalasi Aplikasi HTMLy
 1.Masuk ke directory /var/www/html pada host.
 ```bash
     $ cd /var/www/html
@@ -95,7 +95,7 @@ Cek apakah instalasi apache berhasil atau tidak di http://localhost:8888
 6.Buka halaman http://localhost:8888/htmly/installer.php untuk instalasi lebih lanjut.
 ***
 jika pada saat membuka 		http://localhost:8888/htmly/installer.php terdapat ***error***: no permission to write in the Directory serta ***Warning***:Your rewriteRule is not ready to use. Help!. 	lakukan langkah berikut:
-##### Set Up mod_rewrite for Apache
+### Set Up mod_rewrite for Apache
 1.Enabling mod_rewrite
 ```bash
 $ sudo a2enmod rewrite
