@@ -10,14 +10,14 @@ HTMLy menggunakan algoritma unik untuk menemukan atau daftar isi situs berdasark
 HTMLy dirancang untuk berjalan lancar meskipun menggunakan spesifikasi server minimal. Dengan 512MB RAM atau bahkan kurang masih tetap dapat menangani lebih dari 10K posting tanpa masalah apapun.
 
 
-## Instalasi
+##Instalasi
 
 - HTMLy membutuhkan:
 	- php versi >= 5.3
 	- php-xml package
 	- Web Server(apache2).
 - Langkah instalasi dalam CLI.
-#####Membuat VIrtual Machine Ubuntu server 
+###Membuat VIrtual Machine Ubuntu server 
 	1.Donwload [virtual box](https://www.virtualbox.org/wiki/Downloads). kemudian install.
 	2.Download Ubuntu Server.
 	3.Setelah itu buka virtual box, kemudian buat baru
@@ -28,12 +28,12 @@ HTMLy dirancang untuk berjalan lancar meskipun menggunakan spesifikasi server mi
 	7.Pengaturan alokasi Memori: *Dinamik*, lanjut kemudian pilih 'buat'
 	8.Jalankan  ubuntu_server yand tadi sudah dibuat, pilih file `.iso` yang tadi sudah di download, ikuti petunjuk lanjutannya [disini](http://www.tecmint.com/installation-of-ubuntu-16-04-server-edition/).
 
-#####Setting *Port-forwarding*
+###Setting *Port-forwarding*
 
 Name | protocol
 
 
-#####Instalasi LAMP (Linux Apache MySQL PHP)
+###Instalasi LAMP (Linux Apache MySQL PHP)
 	1.Instal SSH (untuk remote)
 		$ sudo apt update
 		$ sudo apt install ssh
