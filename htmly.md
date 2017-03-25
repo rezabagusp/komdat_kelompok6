@@ -54,19 +54,19 @@ ssh    | TCP        |            | 2222       |            | 22
 ### Instalasi LAMP (Linux Apache MySQL PHP)
 1.Instal SSH (untuk remote)
 ```bash
-    $ sudo apt update
-    $ sudo apt install ssh
+$ sudo apt update
+$ sudo apt install ssh
 ```
 2.Install Apache, MySQL, PHP; disini sebenarnya kita hanya menggunakan PHP, apache dan php-xml package saja karena hmtly tidak menggunakan database.
 
 ```bash
-	$ sudo apt install apache2
-    $ sudo apt install mysql-server
-    $ sudo apt install php
-    $ sudo apt install libapache2-mod-php
-    $ sudo apt install php-mysql
-    $ sudo apt install php-gd php-mcrypt php-mbstring php-xml php-ssh2
-    $ sudo service apache2 restart
+$ sudo apt install apache2
+$ sudo apt install mysql-server
+$ sudo apt install php
+$ sudo apt install libapache2-mod-php
+$ sudo apt install php-mysql
+$ sudo apt install php-gd php-mcrypt php-mbstring php-xml php-ssh2
+$ sudo service apache2 restart
 ```
 Cek apakah instalasi apache berhasil atau tidak di http://localhost:8888
 ***
@@ -74,23 +74,23 @@ Cek apakah instalasi apache berhasil atau tidak di http://localhost:8888
 ### Instalasi Aplikasi HTMLy
 1.Masuk ke directory /var/www/html pada host.
 ```bash
-    $ cd /var/www/html
+$ cd /var/www/html
 ```
 2.Lakukan cloning repository htmly dari github
 ```bash
-    $ git clone "https://github.com/danpros/htmly"
+$ git clone "https://github.com/danpros/htmly"
 ```
 3.Masuk ke directory htmly
 ```bash
-    $ cd htmly
+$ cd htmly
 ```
 4.Kemudian donwload juga file installer.php
 ```bash
-    $ wget "https://github.com/danpros/htmly/releases/download/v2.7.4/installer.php"
+$ wget "https://github.com/danpros/htmly/releases/download/v2.7.4/installer.php"
 ```
 5.Ubah kepemilikan ke user www-data (webserver)
 ```bash
-    $ sudo chown -R www-data:www-data /var/www/html/htmly
+$ sudo chown -R www-data:www-data /var/www/html/htmly
 ```
 6.Buka halaman http://localhost:8888/htmly/installer.php untuk instalasi lebih lanjut.
 ***
