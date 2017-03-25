@@ -72,27 +72,31 @@ Cek apakah instalasi apache berhasil atau tidak di http://localhost:8888
 ***
 
 ### Instalasi Aplikasi HTMLy
-1.Masuk ke directory /var/www/html pada host.
+1.Ubah status menjadi superuser agar mendapatkan permission yang penuh.
+```bash
+$ sudo su
+```
+2.Masuk ke directory /var/www/html pada host.
 ```bash
 $ cd /var/www/html
 ```
-2.Lakukan cloning repository htmly dari github
+3.Lakukan cloning repository htmly dari github
 ```bash
 $ git clone "https://github.com/danpros/htmly"
 ```
-3.Masuk ke directory htmly
+4.Masuk ke directory htmly
 ```bash
 $ cd htmly
 ```
-4.Kemudian donwload juga file installer.php
+5.Kemudian donwload juga file installer.php
 ```bash
 $ wget "https://github.com/danpros/htmly/releases/download/v2.7.4/installer.php"
 ```
-5.Ubah kepemilikan ke user www-data (webserver)
+6.Ubah kepemilikan ke user www-data (webserver)
 ```bash
 $ sudo chown -R www-data:www-data /var/www/html/htmly
 ```
-6.Buka halaman http://localhost:8888/htmly/installer.php untuk instalasi lebih lanjut.
+7.Buka halaman http://localhost:8888/htmly/installer.php untuk instalasi lebih lanjut.
 ***
 jika pada saat membuka 		http://localhost:8888/htmly/installer.php terdapat ***error***: no permission to write in the Directory serta ***Warning***:Your rewriteRule is not ready to use. Help!. 	lakukan langkah berikut:
 ### Set Up mod_rewrite for Apache
