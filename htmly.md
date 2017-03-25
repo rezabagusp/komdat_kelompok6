@@ -18,7 +18,7 @@ HTMLy dirancang untuk berjalan lancar meskipun menggunakan spesifikasi server mi
 	- Web Server(apache2).
 
 ##### Membuat VIrtual Machine Ubuntu server 
-1.Download [virtual box](https://www.virtualbox.org/wiki/Downloads). kemudian install.
+1.Download [Virtual Box](https://www.virtualbox.org/wiki/Downloads). kemudian install.
 
 2.Download [Ubuntu Server](https://www.ubuntu.com/download/server).
 
@@ -58,6 +58,7 @@ ssh    | TCP        |            | 2222       |            | 22
     $ sudo apt install ssh
 ```
 2.Install Apache, MySQL, PHP; disini sebenarnya kita hanya menggunakan PHP, apache dan php-xml package saja karena hmtly tidak menggunakan database.
+
 ```bash
 	$ sudo apt install apache2
     $ sudo apt install mysql-server
@@ -69,29 +70,36 @@ ssh    | TCP        |            | 2222       |            | 22
 ```
 Cek apakah instalasi apache berhasil atau tidak di http://localhost:8888
 ***
-##### instalasi Aplikasi HTMLy
+
+##### Instalasi Aplikasi HTMLy
 1.Masuk ke directory /var/www/html pada host.
 ```bash
-    $ cd /var/www/html```
+    $ cd /var/www/html
+```
 2.Lakukan cloning repository htmly dari github
 ```bash
-    $ git clone "https://github.com/danpros/htmly"```
+    $ git clone "https://github.com/danpros/htmly"
+```
 3.Masuk ke directory htmly
 ```bash
-    $ cd htmly```
+    $ cd htmly
+```
 4.Kemudian donwload juga file installer.php
 ```bash
-    $ wget "https://github.com/danpros/htmly/releases/download/v2.7.4/installer.php"```
+    $ wget "https://github.com/danpros/htmly/releases/download/v2.7.4/installer.php"
+```
 5.Ubah kepemilikan ke user www-data (webserver)
 ```bash
-    $ sudo chown -R www-data:www-data /var/www/html/htmly```
+    $ sudo chown -R www-data:www-data /var/www/html/htmly
+```
 6.Buka halaman http://localhost:8888/htmly/installer.php untuk instalasi lebih lanjut.
 ***
 jika pada saat membuka 		http://localhost:8888/htmly/installer.php terdapat ***error***: no permission to write in the Directory serta ***Warning***:Your rewriteRule is not ready to use. Help!. 	lakukan langkah berikut:
 #####Set Up mod_rewrite for Apache
-1.Enabling mod_rewrite 
+1.Enabling mod_rewrite
 ```bash
-$ sudo a2enmod rewrite```
+$ sudo a2enmod rewrite
+```
 2.Lakukan modifikasi pada file .htacces dengan membuka file default apache configuration
 ```bash
 $ sudo nano /etc/apache2/sites-enabled/000-default.conf```
