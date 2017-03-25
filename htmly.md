@@ -31,14 +31,18 @@ HTMLy dirancang untuk berjalan lancar meskipun menggunakan spesifikasi server mi
 5.Hard Disk : pilih 'buat hardisk virtual sekarang'
 ![atur_hardisk](image/atur_hardisk.PNG)
 
+
 6.Tipe Berkas Hardisk : pilih 'VDI (*Virtual Disk image*)'
 ![hardisk_filetype](image/hardisk_filetype.PNG)
+
 
 7.Pengaturan alokasi Memori: *Dinamik*, lanjut kemudian pilih 'buat'
 ![dynamically_allocated](image/dynamically_allocated.PNG)
 
+
 8.Jalankan  ubuntu_server yand tadi sudah dibuat, pilih file `.iso` yang tadi sudah di download.
 ![startup_disk](image/startup_disk.PNG)
+
 
 9.Kemudian ikuti petunjuk lanjutannya [disini](http://www.tecmint.com/installation-of-ubuntu-16-04-server-edition/).
 ***
