@@ -128,26 +128,27 @@ $ sudo service apache2 restart
 ## Konfigurasi
 
 ### Pemilihan & Pergantian Tema
-1. Buka laman https://www.htmly.com/download/themes
-2. pilih tema web yang diinginkan. misalkan kita ingin mengganti dengan tema *cleanblog*.
+1.Buka laman https://www.htmly.com/download/themes
+2.pilih tema web yang diinginkan. misalkan kita ingin mengganti dengan tema *cleanblog*.
 ![tema_cleanblog](image/tema_cleanblog.png)
-3. Download dahulu repositorinya
+3.Download dahulu repositorinya
 ```bash
 $ git clone "https://github.com/danpros/htmly-cleanblog"
 ```
-4. Ganti nama foldernya menjadi ''cleanblog''
+4.Ganti nama foldernya menjadi ''cleanblog''
 ```bash
 $ mv htmly-cleanblog cleanblog
 ```
-5. Login ke aplikasi, lakukan konfigursi pada aplikasi di http://localhost:8888/htmly/admin/config. ganti `config key` dengan value `themes/cleanblog`, kemudian 'submit query'. cek menu 'home' untuk melihat perubahan.
+5.Login ke aplikasi, lakukan konfigursi pada aplikasi di http://localhost:8888/htmly/admin/config. ganti `config key` dengan value `themes/cleanblog`, kemudian 'submit query'. cek menu 'home' untuk melihat perubahan.
 
 ### Third party untuk comment system (disqus)
-1. Buka laman https://disqus.com, kemudian pilih *getting started*. Lakukan sign up.
-2. Kemudian pilih '*i want to comment on sites*'. setalah itu pilih menu 'blog', 'get started'
-3. Isi nama website dengan 'htmly' atau apapun sesuai keinginan, secara otomatis kita akan mendapatkan *uniq disqus url* seperti di bawah ini.
+1.Buka laman https://disqus.com, kemudian pilih *getting started*. Lakukan sign up.
+2.Kemudian pilih '*i want to comment on sites*'. setalah itu pilih menu 'blog', 'get started'
+3.Isi nama website dengan 'htmly' atau apapun sesuai keinginan, secara otomatis kita akan mendapatkan *uniq disqus url* seperti di bawah ini.
+
 ![create_disqus](image/create_disqus.png)
-4. Lakukan config pada aplikasi, ubah config key `comment.system` dengan value `disqus`. dan `disqus.shortname` dengan nama uniq disqus yang sudah dibuat pada gambar nomor 3.
-5. *Submit query*, dan coba cek pada bagian *posting* apakah sudah tersedia kolom komentar atau belum.
+4.Lakukan config pada aplikasi, ubah config key `comment.system` dengan value `disqus`. dan `disqus.shortname` dengan nama uniq disqus yang sudah dibuat pada gambar nomor 3.
+5.*Submit query*, dan coba cek pada bagian *posting* apakah sudah tersedia kolom komentar atau belum.
 ![kolom_disqus](image/kolom_disqus.png)
 
 
