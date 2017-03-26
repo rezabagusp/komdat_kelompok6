@@ -129,8 +129,7 @@ $ sudo service apache2 restart
 
 ### Pemilihan & Pergantian Tema
 1. Buka laman https://www.htmly.com/download/themes
-2. pilih tema web yang diinginkan. misalkan kita ingin mengganti dengan tema *cleanblog*.
-![tema_cleanblog](image/tema_cleanblog.png)
+2. pilih tema web yang diinginkan. misalkan kita ingin mengganti dengan tema *cleanblog*.![tema_cleanblog](image/tema_cleanblog.png)
 3. Download dahulu repositorinya
 ```bash
 $ git clone "https://github.com/danpros/htmly-cleanblog"
