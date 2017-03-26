@@ -122,6 +122,8 @@ $ sudo nano /etc/apache2/sites-enabled/000-default.conf
 $ sudo service apache2 restart
 ```
 5.coba akses kembali http://localhost:8888/htmly/installer.php. seharusnya sudah bisa melakukan instalasi.
+
+![after sudo chown ](image/after_sudo_chown.PNG)
 ## Konfigurasi (opsional)
 
 Setting tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
