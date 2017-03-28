@@ -17,40 +17,6 @@ HTMLy dirancang untuk berjalan lancar meskipun menggunakan spesifikasi server mi
 	- php-xml package
 	- Web Server(apache2).
 
-### Membuat VIrtual Machine Ubuntu server 
-1.Download [Virtual Box](https://www.virtualbox.org/wiki/Downloads). kemudian install.
-
-2.Download [Ubuntu Server](https://www.ubuntu.com/download/server).
-
-3.Setelah itu buka virtual box, kemudian buat baru
-![new_os](image/new_os.PNG)
-
-4.Atur ukuran memori
-
-![atur_memory](image/atur_disk.PNG)
-
-5.Hard Disk : pilih 'buat hardisk virtual sekarang'
-
-![atur_hardisk](image/atur_hardisk.PNG)
-
-6.Tipe Berkas Hardisk : pilih 'VDI (*Virtual Disk image*)'
-
-![hardisk_filetype](image/hardisk_filetype.PNG)
-
-7.Pengaturan alokasi Memori: *Dinamik*, lanjut kemudian pilih 'buat'
-![dynamically_allocated](image/dynamically_allocated.PNG)
-
-8.Jalankan  ubuntu_server yand tadi sudah dibuat, pilih file `.iso` yang tadi sudah di download.
-![startup_disk](image/startup_disk.PNG)
-
-9.Kemudian ikuti petunjuk lanjutannya [disini](http://www.tecmint.com/installation-of-ubuntu-16-04-server-edition/).
-***
-##### Setting *Port-forwarding*
-Name   | Protocol   | Host IP    | Host Port  | Guest IP   | Guest Port
-----   | --------   | -------    | ---------  | --------   | ----------
-http   | TCP        |            | 8888       |            | 80
-ssh    | TCP        |            | 2222       |            | 22
-
 ### Instalasi LAMP (Linux Apache MySQL PHP)
 1.Instal SSH (untuk remote)
 ```bash
@@ -110,12 +76,14 @@ $ sudo nano /etc/apache2/sites-enabled/000-default.conf
 ```
 3.Didalam file anda akan menemukan blcok `<VirtualHost *:80>` masukkan block berikut pada line 1, kemudian save.
 ```bash
+...
 <Directory /var/www/html>
     Options Indexes FollowSymLinks MultiViews
     AllowOverride All
     Order allow,deny
     allow from all
 </Directory>
+...
 ```
 4.Restart apache
 ```bash
