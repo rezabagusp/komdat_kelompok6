@@ -40,7 +40,7 @@ $ sudo apt install php-mysql
 $ sudo apt install php-gd php-mcrypt php-mbstring php-xml php-ssh2
 $ sudo service apache2 restart
 ```
-Cek apakah instalasi apache berhasil atau tidak di http://localhost:8888
+Cek apakah instalasi apache berhasil atau tidak di http://localhost:8888 (localhost atau alamat IP)
 ***
 
 ### Instalasi Aplikasi HTMLy
@@ -115,7 +115,7 @@ $ mv htmly-cleanblog cleanblog
 ```
 5. Login ke aplikasi, lakukan konfigursi pada aplikasi di http://localhost:8888/htmly/admin/config. ganti `config key` dengan value `themes/cleanblog`, kemudian 'submit query'. cek menu 'home' untuk melihat perubahan.
 
-### Third party untuk comment system (disqus)
+### Third party untuk comment system (Disqus)
 1. Buka laman https://disqus.com, kemudian pilih *getting started*. Lakukan sign up.
 2. Kemudian pilih '*i want to comment on sites*'. setalah itu pilih menu 'blog', 'get started'
 3. Isi nama website dengan 'htmly' atau apapun sesuai keinginan, secara otomatis kita akan mendapatkan *uniq disqus url* seperti di bawah ini.
@@ -128,12 +128,11 @@ $ mv htmly-cleanblog cleanblog
 ##  Maintenance
 
 Setting tambahan untuk maintenance secara periodik, misalnya:
-- hapus tmp sehari sekali
-- buat backup seminggu sekali
-- etc.
+- hapus tmp sehari sekali --> clear cache HTmLy
+- Kita dapat Menghapus cache yang ada pada website
+- buat backup seminggu sekali -> ga ada
+- Konfigurasi tema, pengaturan jumlah page yang tampil dan sebagainya yang terdapat di HTMLy dapat dilihat/diubah di http://localhost/htmly/admin/config; (localhost dapat berupa alamat web atau localhost).
 
-
-## Otomatisasi
 
 Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 ini maksudnya yang gimana yak
@@ -142,17 +141,67 @@ ini maksudnya yang gimana yak
 
 ## Cara Pemakaian
 
-- Tampilan aplikasi web
-- Fungsi-fungsi utama
-- Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
+### Tampilan aplikasi web
+![tampilanawal](image/homepage.png)
+### Add Content
+1. **Regular post** (Untuk postingan berisikan kata-kata saja)
+![tampilanregular](image/regular_post.png)
+![post regular](image/regular_post_isi.png)
+2. **Image Post** (Untuk postingan beserta feature image)
+![post foto](image/image_post.png)
+3. **Video Post** (Untuk postingan berisikan kata-kata beserta video)
+![post foto](image/video_post.png)
+![post foto](image/posting_video.png)
+4. **Audio Post** (Untuk postingan berisikan kata-kata beserta Audio)
+![post foto](image/audio_post.png)
+![post foto](image/posting_audio.png)
+5. **Link Post** (Bisa direct ke link yang ingin dituju)
+![post foto](image/link_post.png)
+6. **Quote Post** (Postingan berisikan quotes dari seseorang)
+![post foto](image/quote_post.png)
+![post foto](image/posting_quote.png)
+7. **Static Page**
+![post foto](image/static_page.png)
+![post foto](image/post_static.png)
+
+### Edit and Delete Post
+![post foto](image/mypost.png)
+
+### Add Category
+![post foto](image/category.png)
+
+### Edit Profile
+![post foto](image/edit_profile.png)
+
+### Configuration
+![post foto](image/config.png)
+
+### Import
+![post foto](image/import.png)
+
 
 
 ## Pembahasan
+### Pendapat anda tentang aplikasi web ini
 
-- Pendapat anda tentang aplikasi web ini
-	- pros:
-	- cons:
-- Bandingkan dengan aplikasi web kelompok lain yang sejenis
+Menurut kelompok 6, HTMLy sesuai dengan pengertian yang diberikan oleh *developer*nya, yaitu cepat dan sederhana. Dengan kesederhanaan ini semua proses mem-*posting* menjadi cepat. Mengapa begitu? Karena kesederhanaannya ditonjolkan oleh *Databaseless*, dimana HTMLy adalah flat-file blog dan flat file CMS sehingga tidak ada *database* yang diperlukan. Mengapa cepat? Karena HTMLy menggunakan *File Caching* untuk meningkatkan performa secara drastis. HTMLy dapat dipakai secara gratis dan dikembangkan bersama karena *Open Resource*.
+
+Walau punya kelebihan, menurut Kelompok 6 HTMLy memiliki kekurangan seperti berikut:
+
+1. Tidak ada *autosave* pada saat menulis *post* baru. 
+2. Tidak memiliki opsi *save as a draft*. 
+3. Tidak dapat *upload* gambar dari editor.
+
+Kelompok 6 juga melakukan pembandingan dengan kelompok yang meng-*install* Pagekit. Berikut perbandingannya:
+
+| HTMLy | Pagekit |
+|--------|--------|
+|Dibangun tidak menggunakan framework| Dibangun menggunakan framework PHP Symfony dan Vue.js|
+|*Databaseless* | Masih menggunakan *database*|
+|*Online Backup*| Tidak *Online Backup*|
+|*Cloud Update* | Tidak *Cloud Update*|
+|*File Caching* | Tidak *File Caching*|
+|Terdapat file manager untuk mengatur file apa saja yang diunggah ke server | Terdapat file manager untuk mengatur file apa saja yang diunggah ke server |
 
 
 ## Referensi
@@ -162,6 +211,5 @@ https://github.com/danpros/htmly
 
 - Documentation (basic configure themes, tips & tricks)
 https://docs.htmly.com/
-
 
 
