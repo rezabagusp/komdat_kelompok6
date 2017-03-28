@@ -142,42 +142,42 @@ ini maksudnya yang gimana yak
 ## Cara Pemakaian
 
 ### Tampilan aplikasi web
-![tampilanawal](image/homepage.png)
+![tampilanawal](image/homepage.PNG)
 ### Add Content
 1. **Regular post** (Untuk postingan berisikan kata-kata saja)
-![tampilanregular](image/regular_post.png)
-![post regular](image/regular_post_isi.png)
+![tampilanregular](image/regular_post.PNG)
+![post regular](image/regular_post_isi.PNG)
 2. **Image Post** (Untuk postingan beserta feature image)
-![post foto](image/image_post.png)
+![post foto](image/image_post.PNG)
 3. **Video Post** (Untuk postingan berisikan kata-kata beserta video)
-![post foto](image/video_post.png)
-![post foto](image/posting_video.png)
+![post foto](image/video_post.PNG)
+![post foto](image/posting_video.PNG)
 4. **Audio Post** (Untuk postingan berisikan kata-kata beserta Audio)
-![post foto](image/audio_post.png)
-![post foto](image/posting_audio.png)
+![post foto](image/audio_post.PNG)
+![post foto](image/posting_audio.PNG)
 5. **Link Post** (Bisa direct ke link yang ingin dituju)
-![post foto](image/link_post.png)
+![post foto](image/link_post.PNG)
 6. **Quote Post** (Postingan berisikan quotes dari seseorang)
-![post foto](image/quote_post.png)
-![post foto](image/posting_quote.png)
+![post foto](image/quote_post.PNG)
+![post foto](image/posting_quote.PNG)
 7. **Static Page**
-![post foto](image/static_page.png)
-![post foto](image/post_static.png)
+![post foto](image/static_page.PNG)
+![post foto](image/post_static.PNG)
 
 ### Edit and Delete Post
-![post foto](image/mypost.png)
+![post foto](image/mypost.PNG)
 
 ### Add Category
-![post foto](image/category.png)
+![post foto](image/category.PNG)
 
 ### Edit Profile
-![post foto](image/edit_profile.png)
+![post foto](image/edit_profile.PNG)
 
 ### Configuration
-![post foto](image/config.png)
+![post foto](image/config.PNG)
 
 ### Import
-![post foto](image/import.png)
+![post foto](image/import.PNG)
 
 
 
