@@ -1,4 +1,10 @@
 # Aplikasi Web HTMLy
+<h1 align="center"><img src="https://raw.githubusercontent.com/danpros/htmly/master/system/resources/images/logo-big.png" width="500px"></h1>
+
+[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Otomatisasi](#otomatisasi) | [Maintenance](#maintenance) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
+:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+
+# Aplikasi Web HTMLy
 
 
 ## Sekilas Tentang HTMly
@@ -119,7 +125,7 @@ $ mv htmly-cleanblog cleanblog
 ![kolom_disqus](image/kolom_disqus.PNG)
 
 
-##  Maintenance (opsional)
+##  Maintenance
 
 Setting tambahan untuk maintenance secara periodik, misalnya:
 - hapus tmp sehari sekali
