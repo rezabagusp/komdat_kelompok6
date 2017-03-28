@@ -98,7 +98,7 @@ $ sudo service apache2 restart
 ### Pemilihan & Pergantian Tema
 1. Buka laman https://www.htmly.com/download/themes
 2. pilih tema web yang diinginkan. misalkan kita ingin mengganti dengan tema *cleanblog*.
-![tema_cleanblog](image/tema_cleanblog.png)
+![tema_cleanblog](image/tema_cleanblog.PNG)
 3. Download dahulu repositorinya
 ```bash
 $ git clone "https://github.com/danpros/htmly-cleanblog"
@@ -116,7 +116,7 @@ $ mv htmly-cleanblog cleanblog
 ![create_disqus](image/create_disqus.png)
 4. Lakukan config pada aplikasi, ubah config key `comment.system` dengan value `disqus`. dan `disqus.shortname` dengan nama uniq disqus yang sudah dibuat pada gambar nomor 3.
 5. *Submit query*, dan coba cek pada bagian *posting* apakah sudah tersedia kolom komentar atau belum.
-![kolom_disqus](image/kolom_disqus.png)
+![kolom_disqus](image/kolom_disqus.PNG)
 
 
 ##  Maintenance (opsional)
