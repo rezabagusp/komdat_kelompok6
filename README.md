@@ -1,7 +1,7 @@
 # Aplikasi Web HTMLy
 <h1 align="center"><img src="https://raw.githubusercontent.com/danpros/htmly/master/system/resources/images/logo-big.png" width="500px"></h1>
 
-[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Otomatisasi](#otomatisasi) | [Maintenance](#maintenance) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
+[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Maintenance](#maintenance) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 
 # Aplikasi Web HTMLy
@@ -115,28 +115,21 @@ $ mv htmly-cleanblog cleanblog
 ```
 5. Login ke aplikasi, lakukan konfigursi pada aplikasi di http://localhost:8888/htmly/admin/config. ganti `config key` dengan value `themes/cleanblog`, kemudian 'submit query'. cek menu 'home' untuk melihat perubahan.
 
-### Third party untuk comment system (Disqus)
+### Third party untuk *Comment System* (Disqus)
 1. Buka laman https://disqus.com, kemudian pilih *getting started*. Lakukan sign up.
 2. Kemudian pilih '*i want to comment on sites*'. setalah itu pilih menu 'blog', 'get started'
 3. Isi nama website dengan 'htmly' atau apapun sesuai keinginan, secara otomatis kita akan mendapatkan *uniq disqus url* seperti di bawah ini.
 ![create_disqus](image/create_disqus.png)
 4. Lakukan config pada aplikasi, ubah config key `comment.system` dengan value `disqus`. dan `disqus.shortname` dengan nama uniq disqus yang sudah dibuat pada gambar nomor 3.
-5. *Submit query*, dan coba cek pada bagian *posting* apakah sudah tersedia kolom komentar atau belum.
+5. klik *Submit query*, dan coba cek pada bagian *posting* apakah sudah tersedia kolom komentar atau belum.
 ![kolom_disqus](image/kolom_disqus.PNG)
 
 
 ##  Maintenance
 
 Setting tambahan untuk maintenance secara periodik, misalnya:
-- hapus tmp sehari sekali --> clear cache HTmLy
-- Kita dapat Menghapus cache yang ada pada website
-- buat backup seminggu sekali -> ga ada
-- Konfigurasi tema, pengaturan jumlah page yang tampil dan sebagainya yang terdapat di HTMLy dapat dilihat/diubah di http://localhost/htmly/admin/config; (localhost dapat berupa alamat web atau localhost).
-
-
-Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
-ini maksudnya yang gimana yak
-
+- Hapus *cache* : Kita dapat Menghapus *cache* yang ada pada website. Pada menu Dashboard admin, pilih tab *clear cache* maka secara otomatis akan menghapus isi *cache* aplikasi
+- Maintenance Konfigurasi tema, pengaturan jumlah page yang tampil dan sebagainya yang terdapat di HTMLy dapat dilihat/diubah di http://localhost/htmly/admin/config; (localhost dapat berupa alamat web atau localhost).
 
 
 ## Cara Pemakaian
