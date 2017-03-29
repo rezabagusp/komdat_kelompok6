@@ -1,11 +1,10 @@
 # Aplikasi Web HTMLy
 <h1 align="center"><img src="https://raw.githubusercontent.com/danpros/htmly/master/system/resources/images/logo-big.png" width="500px"></h1>
 
-[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) |[Maintenance](#maintenance) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)|
+[Sekilas Tentang](#sekilas-tentang-htmly) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Maintenance](#maintenance) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 
 # Aplikasi Web HTMLy
-
 
 ## Sekilas Tentang HTMly
 
@@ -121,7 +120,7 @@ $ mv htmly-cleanblog cleanblog
 3. Isi nama website dengan 'htmly' atau apapun sesuai keinginan, secara otomatis kita akan mendapatkan *uniq disqus url* seperti di bawah ini.
 ![create_disqus](image/create_disqus.png)
 4. Lakukan config pada aplikasi, ubah config key `comment.system` dengan value `disqus`. dan `disqus.shortname` dengan nama uniq disqus yang sudah dibuat pada gambar nomor 3.
-5. klik *Submit query*, dan coba cek pada bagian *posting* apakah sudah tersedia kolom komentar atau belum.
+5. Klik *Submit query*, dan coba cek pada bagian *posting* apakah sudah tersedia kolom komentar atau belum.
 ![kolom_disqus](image/kolom_disqus.PNG)
 
 
