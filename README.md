@@ -2,7 +2,7 @@
 <h1 align="center"><img src="https://raw.githubusercontent.com/danpros/htmly/master/system/resources/images/logo-big.png" width="500px"></h1>
 
 [Sekilas Tentang](#sekilas-tentang-htmly) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Maintenance](#maintenance) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
-:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+:---:|:---:|:---:|:---:|:---:|:---:|:---:
 
 # Aplikasi Web HTMLy
 
